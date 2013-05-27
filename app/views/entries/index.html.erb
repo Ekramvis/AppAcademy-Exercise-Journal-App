@@ -6,3 +6,15 @@
 <div class="right">Right Panel
 
 </div>
+
+<script type="text/javascript">
+$(function () {
+
+  var entriesData = <%= Entry.all.to_json.html_safe %>;
+
+  window.JA.initialize(
+    $(".entries-index"),
+    entriesData
+  );
+});
+</script>
