@@ -1,10 +1,8 @@
 
 
 <% entries.each(function (entry) { %>
-  <%= console.log(entry.id) %>
-  <%= console.log(entry.title) %>
-  <%= console.log(entry) %>
+
   <li class="entry" data-id='<%= entry.escape("id") %>'>
-    <a href='entries/<%= entry.escape("id") %>'><%= entry.escape("title") %></a>
+    <a href='#entries/<%= entry.escape("id") %>'><%= entry.escape("title") %></a>
   </li>
 <% }); %>

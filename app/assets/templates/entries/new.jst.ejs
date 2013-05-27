@@ -1,0 +1,16 @@
+<div>
+  <h2>What's on your mind?</h2>
+  <label for="entry_title">
+    Title
+    <input type="textfield" name="entry[title]" id="entry_title">
+  </label>
+
+  <label for="entry_body">
+    Daily Notes
+      <input type="textarea" rows="10" name="entry[body]" id="entry_body">
+  </label>
+
+  <input type="hidden" name="entry[date]" value="<%= new Date().toDateString() %>">
+
+  <button class="submit">Dear Diary</button>
+</div>

@@ -1,0 +1,21 @@
+<style type="text/css">
+
+.right {
+  float: left;
+}
+
+.left {
+  float: left;
+}
+
+.entries-index li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.clickable {
+  cursor: hand;
+  cursor: pointer;
+}
+
+</style>
